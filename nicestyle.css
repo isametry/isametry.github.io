@@ -1,0 +1,66 @@
+subtle {opacity: 0.5}
+smol {font-size: 70%;}
+
+ol {list-style: none; counter-reset: li}
+
+ol li::before {content: counter(li); color: rgb(128, 255, 128); opacity: 0.3;
+    display: inline-block; width: 1em; margin-left: -1.5em;
+    margin-right: 0.5em; text-align: right; direction: rtl}
+
+li {counter-increment: li}
+
+body {
+  display: block;
+  background-color: rgb(38, 46, 38); /* Hintergrundfarbe */
+  color: white; /* Schriftfarbe */
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
+  max-width: 650px; /* Breite des Inhaltsbereichs */
+  line-height: 1.4;
+  margin: 0 auto;
+  padding: 30px 2em;
+}
+
+#content {
+}
+
+#things {
+  background-color: rgb(30, 36, 30);
+  padding: 15px 2em;
+}
+
+li {padding-bottom: 0.5em; padding-top: 0.5em;}
+
+/* Hyperlinks */
+a {
+  color: color(display-p3 0 1 0.5); color: rgb(0, 255, 128);
+}
+a { text-decoration: none; } 
+
+/* Wenn Maus drüber bzw. Link hat Fokus, dann durchgezogene Linie und Text weiß */
+a:hover,
+a:focus {
+  border-bottom: 1px solid rgb(255, 192, 255);
+  color: rgb(255, 192, 255);
+}
+h1 { 
+  font-size: 175%; 
+  color: color(display-p3 0, 1, 0.5); color: rgb(0, 255, 128);
+}
+h2 { 
+  font-size: 150%;
+  color: color(display-p3 0, 1, 0.5); color: rgb(0, 255, 128);
+}
+
+h3 {
+  font-size: 125%;
+}
+
+hr {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-color: #fff;
+  border: 0 none;
+  height: 1px;
+  opacity: 0.3;
+}
+

@@ -1,0 +1,28 @@
+@import url("nicestyle.css");
+
+subtle {opacity: 0.5; font-size: 80%;}
+
+ol li::before {content: counter(li); color: black; opacity: 0.5;}
+
+body {
+  background-color: white; /* Hintergrundfarbe */
+  color: black; /* Schriftfarbe */
+}
+
+li {padding-bottom: 0.5em; padding-top: 0.5em;}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+
+h1 { 
+  color: black;
+}
+h2 { font-size: 130%; }
+
+
+hr {
+  border-top: solid 1px #000;
+}
