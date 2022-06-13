@@ -11,10 +11,10 @@ li {counter-increment: li}
 
 body {
   display: block;
-  background-color: rgb(38, 46, 38); /* Hintergrundfarbe */
-  color: white; /* Schriftfarbe */
+  background-color: rgb(38, 46, 38);
+  color: white;
   font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
-  max-width: 650px; /* Breite des Inhaltsbereichs */
+  max-width: 650px;
   line-height: 1.4;
   margin: 0 auto;
   padding: 30px 2em;
@@ -25,7 +25,20 @@ body {
 
 #things {
   background-color: rgb(30, 36, 30);
-  padding: 15px 2em;
+  padding: 1em 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#what {
+  color: white;
+  background-color: rgb(56, 76, 56);
+  padding: 1em 2em;
+  border: 2em;
+}
+
+.subtle {
+  opacity: 0.5;
 }
 
 li {padding-bottom: 0.5em; padding-top: 0.5em;}
@@ -51,15 +64,19 @@ h2 {
 }
 
 h3 {
-  font-size: 125%;
+  font-size: 110%;
 }
 
 hr {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  background-color: #fff;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  opacity: 0.2;
+}
+
+.hr_hidden {
+  margin-top: 0;
+  margin-bottom: 0;
   border: 0 none;
-  height: 1px;
-  opacity: 0.3;
+  height: 0px;
 }
 
