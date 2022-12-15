@@ -1,4 +1,4 @@
-@import url("nicestyle.css");
+@import url("isametry.css");
 
 subtle {opacity: 0.5;}
 
@@ -10,10 +10,26 @@ body {
   font-size: 10pt;
 }
 
-#things {
-  padding: 0em 0em;
-  margin-top: 0em;
-  margin-bottom: 0em;
+#header {
+  background-color: revert;
+}
+
+#content {
+    color: revert;
+}
+
+.background_light {
+    background-color: revert;
+    mix-blend-mode: normal;
+}
+
+.background_dark {
+    background-color: revert;
+}
+
+.background_BW {
+    background-color: revert;
+    filter: revert;
 }
 
 li {padding-bottom: 0.5em; padding-top: 0.5em;}
