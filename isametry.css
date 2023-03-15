@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
 subtle {opacity: 0.5}
 smol {font-size: 70%;}
 
@@ -12,7 +14,7 @@ li {counter-increment: li}
 body {
   margin: 0 0 0 0;
   display: block;
-  font-family: ui-monospace, "Menlo", "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", "Monaco", "Consolas", monospace, sans-serif;
+  font-family: 'IBM Plex Serif', ui-serif, 'Noto Serif', ui-sans-serif, sans-serif;
   line-height: 1.4;
 }
 
@@ -27,7 +29,7 @@ body {
     margin: 0 auto; 
 }
 
-#header {
+#header, #footer {
   background-color: rgba(0, 255, 180, 0.3);
   max-width: 650px;
   margin: 0 auto; 
@@ -91,13 +93,22 @@ a:focus {
   border-bottom: 1px solid rgb(255, 192, 255);
   color: rgb(255, 192, 255);
 }
+
+h1, h2, h3, h4, .button-basic {
+    font-family: ui-monospace, "Menlo", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", "Monaco", "Consolas", monospace, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: color(display-p3 0, 1, 0.5); color: rgb(0, 191, 135)
+}
+
 h1 { 
   font-size: 175%; 
-  color: rgb(0, 191, 135);
 }
+
 h2 { 
   font-size: 150%;
-  color: color(display-p3 0, 1, 0.5); color: rgb(0, 191, 135);
+  ;
 }
 
 h3 {
@@ -117,3 +128,21 @@ hr {
   height: 0px;
 }
 
+.anticolor{
+  color: revert;
+  color: currentColor;
+  filter: invert(100%);
+}
+
+.button-basic {
+  font-size: 90%;
+  font-weight: bold;
+  background: rgb(0, 191, 135); 
+  border: 0;
+  padding: 0.5;
+}
+
+.button-basic:hover,
+.button-basic:focus {
+  background: rgb(255, 192, 255);
+}
