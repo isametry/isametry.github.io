@@ -139,7 +139,7 @@ hr {
   font-weight: bold;
   background: rgb(0, 191, 135); 
   border: 0;
-  padding: 0.5;
+  padding: 0.5em;
 }
 
 .button-basic:hover,
