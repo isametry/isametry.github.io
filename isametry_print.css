@@ -1,0 +1,64 @@
+@import url("isametry.css");
+
+subtle {opacity: 0.5;}
+
+ol li::before {content: counter(li); color: black; opacity: 0.5;}
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 10pt;
+}
+
+#header {
+  background-color: revert;
+}
+
+#content {
+    color: revert;
+}
+
+.background_light {
+    background-color: revert;
+    mix-blend-mode: normal;
+}
+
+.background_dark {
+    background-color: revert;
+}
+
+.background_BW {
+    background-color: revert;
+    filter: revert;
+}
+
+li {padding-bottom: 0.5em; padding-top: 0.5em;}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+h1 { color: black; }
+h2 { font-size: 130%; color: black}
+h3 { font-size: 110%; color: black}
+
+
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-top: solid 1px #000;
+}
+
+.hr_hidden {
+  border-top: solid 1px #000;
+}
+
+.button-basic {
+  background: white
+}
+
+.anticolor{
+  color: black;
+  filter: revert;
+}
