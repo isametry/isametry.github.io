@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 
-subtle {opacity: 0.5}
+subtle {opacity: 0.65}
 smol {font-size: 70%;}
 
 ol {list-style: none; counter-reset: li}
