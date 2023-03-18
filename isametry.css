@@ -4,15 +4,14 @@
   opacity: 0.6;
 }
 
-.label, .button-basic {
-  .font-family: revert;
+.label, .button_basic, .go_back {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-.smaller, .button-basic {
+.smaller, .button_basic {
   font-size: 85%;
-}
+} 
 
 body {
   font-size: 16px;
@@ -105,12 +104,12 @@ a:hover, a:focus {
   border-bottom: 1px solid hsl(300, 64%, 72%);
 }
 
-h1, h2, h3, h4, .button-basic, .label {
+h1, h2, h3, h4, .button_basic, .label, .go_back {
     font-family: ui-monospace, "Menlo", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", "Monaco", "Consolas", monospace, sans-serif;
     display: inline;
 }
 
-h2, h3, h4 {
+h2, h3, h4, .go_back {
     color: hsl(162, 100%, 37%);
 }
 
@@ -125,8 +124,6 @@ h2 {
 
 h2::before {
     content: "⌘";
-    opacity: 50%;
-    margin-inline-end: 0.5em;
 }
 
 h3 {
@@ -135,6 +132,13 @@ h3 {
 
 h3::before {
     content: "⌥";
+}
+
+.go_back::before {
+  content: "←";
+}
+
+h2::before, h3::before, .go_back::before {
     opacity: 50%;
     margin-inline-end: 0.5em;
 }
@@ -152,14 +156,14 @@ hr {
   height: 0px;
 }
 
-.button-basic {
+.button_basic {
   line-height: 3;
   font-weight: bold;
   border: 1px solid;
   padding: 0.5em;
 }
 
-.button-basic:hover{
+.button_basic:hover{
   background: hsl(300, 64%, 72%, 20%);
   text-decoration: none;
 }
