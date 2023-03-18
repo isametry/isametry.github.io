@@ -1,6 +1,6 @@
 @import url("isametry.css");
 
-subtle {opacity: 0.5;}
+.subtle {opacity: 0.5;}
 
 ol li::before {content: counter(li); color: black; opacity: 0.5;}
 
@@ -18,16 +18,16 @@ body {
     color: revert;
 }
 
-.background_light {
+.onion_background_light {
     background-color: revert;
     mix-blend-mode: normal;
 }
 
-.background_dark {
+.onion_background_dark {
     background-color: revert;
 }
 
-.background_BW {
+.onion_background_BW {
     background-color: revert;
     filter: revert;
 }
