@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 
 .subtle {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .label, .button_basic, .go_back {
@@ -9,7 +9,7 @@
   letter-spacing: 0.1em;
 }
 
-.smaller, .button_basic {
+.smaller, .subtle, .button_basic {
   font-size: 85%;
 } 
 
