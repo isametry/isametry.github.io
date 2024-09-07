@@ -4,7 +4,7 @@
 
 ol li::before {content: counter(li); color: black; opacity: 0.5;}
 
-body, .heading_link, .go_back {
+body, .heading_link, .go_back, .lighter_green {
   color: black;
 }
 

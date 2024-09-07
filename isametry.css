@@ -1,15 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ibm-plex-serif-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ibm-plex-serif-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
-.subtle {
+.subtle, .subtitle, .small_separator {
   opacity: 0.5;
+}
+
+.subtitle, .subtitle_classic {
+  margin-top: 6px;
+  margin-bottom: -3px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .label, .button_basic, .button_solid, .go_back, h1 {
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
 }
 
-.smaller, .subtle, .button_basic, button_solid {
+.smaller, .subtle, .button_basic, .button_solid, .subtitle, .subtitle_classic, .square_tag {
   font-size: 85%;
 }
 
@@ -18,7 +42,11 @@ body {
   margin: 0 0 0 0;
   display: block;
   font-family: 'IBM Plex Serif', ui-serif, 'Noto Serif', 'Georgia', ui-sans-serif, sans-serif;
-  line-height: 1.6;
+  line-height: 1.8;
+}
+
+section {
+  display: inline;
 }
 
 #onion-window {
@@ -48,7 +76,7 @@ body {
 #content {
   max-width: 650px; 
   margin: 0 auto; 
-  padding: 16px 32px;
+  padding: 12px 32px;
   color: currentColor;
 }
 
@@ -100,9 +128,8 @@ a:hover, a:focus {
   border-bottom: 1px solid hsl(300, 64%, 72%);
 }
 
-h1, h2, h3, h4, .button_basic, .button_solid, .label, .go_back, .mono {
+h1, h2, h3, h4, .button_basic, .button_solid, .go_back, .mono, .subtitle, .square_tag {
   font-family: ui-monospace, "Menlo", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", "Monaco", "Consolas", monospace, sans-serif;
-  display: inline;
 }
 
 h1 { 
@@ -111,8 +138,17 @@ h1 {
   line-height: 1;
 }
 
-h2, h3, h4, .go_back {
+h2, h3, .lighter_green {
   color: hsl(162, 100%, 37%);
+}
+
+h2, h3, h4, .go_back {
+  margin-top: 24px;
+  margin-bottom: -8px;
+}
+
+.go_back {
+margin-bottom: 12px
 }
 
 h2 { 
@@ -131,12 +167,19 @@ h3::before {
   content: "⌥";
 }
 
+.plain::before {
+  content: none;
+}
+
 .go_back::before {
   content: "←";
 }
 
+h4 {
+  opacity: 0.65;
+  }
+
 .go_back {
-  padding-top: 12px;
   display: inline-block;
 }
 
@@ -158,11 +201,20 @@ hr {
   height: 0px;
 }
 
-.button_basic, .button_solid {
+.button_basic, .button_solid, .square_tag {
   line-height: 1;
   font-weight: bold;
-  padding: 0.5em;
   border: 1px solid;
+}
+
+.button_basic, .button_solid {
+  padding: 0.5em;
+}
+
+.square_tag {
+  padding: 0.35em 0.45em;
+  opacity: 0.75;
+  margin: 0.2em;
 }
 
 .button_solid {
@@ -174,3 +226,19 @@ hr {
   background: hsl(300, 64%, 72%, 20%);
 }
 
+.regular {
+font-weight: normal}
+
+.go_back {
+  margin-top: revert;
+}
+
+.subtitle_classic {
+  font-family: revert;
+  text-transform: revert;
+  opacity: 0.65;
+}
+
+.small_separator {
+margin:-4px 0px -12px 0px;
+}
