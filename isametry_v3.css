@@ -91,7 +91,6 @@ body {
     display: flex;
     justify-content: center;
     background-color: hsl(162, 100%, 50%);
-    overflow: hidden;
     clip-path: inset(0);
 }
 
