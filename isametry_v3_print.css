@@ -1,0 +1,86 @@
+@import url("isametry_v3.css");
+
+.subtle, .subtitle, .subtitle_classic {
+    opacity: 0.5;
+}
+
+body, .heading_link, .go_back, .lighter_green, .green {
+  color: black;
+}
+
+body {
+  font-size: 10pt;
+}
+
+body, #window, #window_dark_bg {
+    background-color: white;
+}
+
+#header, #footer {
+  background-color: revert;
+  padding: 0px;
+}
+
+#window::after {
+    background-image: none;
+}
+
+#window_dark_bg {
+    mix-blend-mode: normal;
+}
+
+
+section {
+    page-break-inside: avoid;
+}
+
+li {padding-bottom: 0.5em; padding-top: 0.5em;}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+h1 { color: black; text-decoration: none}
+h2 { font-size: 130%; color: black}
+h3 { font-size: 110%; color: black}
+
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+.heading_link:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-top: solid 1px #000;
+}
+
+.hr_hidden {
+  border-top: solid 1px #000;
+}
+
+.button-basic,
+.navblock,
+.button_basic:hover,
+.navblock:hover {
+  background: white;
+}
+
+a:hover,
+.heading_link:hover,
+a:focus,
+.heading_link:focus {
+    color: black;
+    border-bottom: solid 1px black;
+}
+
+.noprint {
+    display: none;
+}
+
+.printonly {
+    display: revert;
+}

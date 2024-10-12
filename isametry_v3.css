@@ -52,7 +52,6 @@
     gap: 1em;
 }
 
-.subtle,
 .subtitle,
 .small_separator {
     opacity: 0.5;
@@ -70,7 +69,8 @@
 .button_basic,
 .button_solid,
 .go_back,
-h1 {
+h1,
+#footer > span {
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
@@ -81,7 +81,8 @@ h1 {
 .button_solid,
 .subtitle,
 .subtitle_classic,
-.square_tags li {
+.square_tags li,
+#footer > span {
     font-size: 85%;
 }
 
@@ -155,9 +156,6 @@ body {
 #header {
     padding: 32px 32px;
     margin-bottom: 1em;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
 }
 
 #footer {
@@ -188,23 +186,14 @@ a {
     color: currentColor;
 }
 
-a,
-.heading_link {
+a {
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
 a:hover,
-.heading_link:hover,
-a:focus,
-.heading_link:focus {
+a:focus {
     color: hsl(300, 64%, 72%);
-}
-
-a:hover,
-.heading_link:hover,
-a:focus,
-.heading_link:focus{
     border-bottom: 1px solid hsl(300, 64%, 72%);
 }
 
@@ -217,14 +206,14 @@ h4,
 .mono,
 .subtitle,
 .square_tags,
-.navblock > h2 {
+.navblock > h2,
+#footer > span {
     font-family: ui-monospace, "Menlo", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", "Monaco", "Consolas", monospace, sans-serif;
 }
 
 h1,
 h2,
 h3,
-.heading_link,
 .lighter_green,
 .navblock > h2,
 a,
@@ -320,7 +309,7 @@ hr {
 }
 
 .square_tags li {
-    display: inline;
+    display: inline-block;
     padding: 0.35em 0.45em;
     opacity: 0.75;
     margin: 0.2em;
@@ -401,4 +390,17 @@ li {
 
 a > .blockdesc {
     color: CanvasText;
+}
+
+.printonly {
+    display: none;
+}
+
+#footer > span,
+#header > p {
+    margin-bottom: 0;
+}
+
+#footer > span {
+    opacity: 0.6;
 }
