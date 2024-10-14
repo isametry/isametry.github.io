@@ -82,7 +82,9 @@ h1,
 .subtitle,
 .subtitle_classic,
 .square_tags li,
-#footer > span {
+#footer > span,
+.featurephoto > p,
+.featurevideo > p {
     font-size: 85%;
 }
 
@@ -154,19 +156,17 @@ body {
 }
 
 #header {
-    padding: 32px 32px;
-    margin-bottom: 1em;
+    padding: 32px;
 }
 
 #footer {
-    margin-top: 1em;
     padding: 20px 32px;
     bottom: 0;
 }
 
 #content {
     margin: 0 auto;
-    padding: 12px 32px;
+    padding: 32px;
     flex-grow: 1;
     flex-wrap: wrap;
     max-width: 750px;
@@ -352,9 +352,15 @@ hr {
     user-select: none;
 }
 
-.featurephoto {
+.featurephoto,
+.featurevideo {
     min-width: 250px;
-    max-width: min(500px, 80%);
+    max-width: min(500px, 100%);
+}
+
+.photosmaller {
+    min-width: 150px;
+    max-width: min(350px, 80%);
 }
 
 li {
@@ -401,6 +407,14 @@ a > .blockdesc {
     margin-bottom: 0;
 }
 
-#footer > span {
+#footer > span,
+.featurephoto > p,
+.featurevideo > p {
     opacity: 0.6;
+}
+
+.featurephoto > p,
+.featurevideo > p {
+    text-align: center;
+    margin-top: 4px;
 }
