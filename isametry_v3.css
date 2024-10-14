@@ -304,8 +304,10 @@ hr {
     padding: 0.5em;
 }
 
-.square_tags {
+.square_tags,
+.square_tags ul {
     padding-left: 0px;
+    display: inline-block;
 }
 
 .square_tags li {
