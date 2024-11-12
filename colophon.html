@@ -17,23 +17,39 @@
 				<a href="./index" class="go_back noprint">Go to main page</a>
 			</div>
 			<div id="content">
-				<h1>
-					<a href="./colophon" title="Colophon · Isametry">Colophon</a>
-				</h1>
+				<h1><a href="./colophon" title="Colophon · Isametry">Colophon</a></h1>
 				<p>
-					All html here is manually written. <em>Some</em> of the CSS is manually stolen.
+					This is a purebred static website. No JavaScript here. Cut from a tree.
 				</p>
 				<p>
-					Body typeface should be:<br>
-					<a href="https://fonts.google.com/specimen/IBM+Plex+Serif" title="IBM Plex Serif" style="color: CanvasText; font-size: 24pt;">IBM Plex Serif ↗</a>
-				</p>
-				<p class="mono">
-					Monospace is whatever your device uses:<br>
-					<span style="color: CanvasText; font-size: 24pt;">ui-monospace</span>
+					All html is manually written; <em>some</em> of the CSS is manually stolen.
 				</p>
 				<p>
-					More coming soon! I especially wanna talk a bit about the background pattern!
+					It is hosted on Github Pages (<a href="https://github.com/isametry/isametry.github.io" title="isametry.github.io">see repo</a>).
 				</p>
+				<h2><a href="#typography" title="Typography">Typography</a></h2>
+				<section id="typography">
+					<p>
+						Body typeface should be:<br>
+						<a href="https://fonts.google.com/specimen/IBM+Plex+Serif" title="IBM Plex Serif" style="color: CanvasText; font-size: 24pt;">IBM Plex Serif ↗</a>
+					</p>
+					<p class="mono">
+						Monospace is whatever your device uses:<br>
+						<span style="font-size: 24pt;">monospace</span>
+					</p>
+				</section>
+				<h2><a href="#darkmode" title="Dark Mode">Dark Mode</a></h2>
+				<section id="darkmode">
+					<p>
+						The darkmode on this site is pure CSS as well. And so far, I could even avoid media queries.
+					</p>
+					<p>
+						This is thanks to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/system-color" title="system-color">system-color variables</a> which you can use wherever you'd otherwise define a fixed color  (using <code>rgb()</code>, <code>hsl()</code> and so on). Then the browser dynamically supplies colors of the current system appearance.
+					</p>
+					<p>
+						When the system appearance is set to light, <code>Canvas</code> will return white, whereas <code>CanvasText</code> black. In dark mode, it is approximately the other way around.
+					</p>
+				</section>
 				<div class="noprint">
 					<hr class="noprint">
 					<p><a href="./index" class="go_back noprint">Back</a></p>
@@ -42,7 +58,6 @@
 			<div id="footer">
 				<span>© 2024 SMA</span>
 			</div>
-			<div class="onion_background_BW"></div>
 		</div>
 		<div id="window_dark_bg">
 		</div>

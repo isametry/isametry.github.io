@@ -207,7 +207,8 @@ h4,
 .subtitle,
 .square_tags,
 .navblock > h2,
-#footer > span {
+#footer > span,
+code {
     font-family: ui-monospace, "Menlo", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", "Monaco", "Consolas", monospace, sans-serif;
 }
 
@@ -419,4 +420,10 @@ a > .blockdesc {
 .featurevideo > p {
     text-align: center;
     margin-top: 4px;
+}
+
+code {
+    background-color: hsla(0, 0%, 70%, 0.3);
+    border-radius: 0.3em;
+    padding: 4px 1px 4px 3px;
 }

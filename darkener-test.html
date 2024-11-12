@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Filter Example</title>
+    <style>
+        
+        body {
+            background-color: hsl(120, 100%, 75%);
+        }
+        
+        .text-darken {
+            position: relative;
+            color: #CCCCCC; /* Text color before darkening */
+        }
+        
+        .text-darken::before {
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs>
+            <filter id="darkenFilter" color-interpolation-filters="sRGB">
+                <feColorMatrix type="matrix" values="
+                0.6 0 0 0 0 
+                0 0.6 0 0 0 
+                0 0 0.6 0 0 
+                0 0 0 1 0" />
+                <feBlend mode="multiply" in2="SourceGraphic" in="SourceGraphic" />
+            </filter>
+        </defs>
+    </svg>
+    -->
+    <p class="text-darken"><span>Darkened Text</span></p>
+    
+</body>
+</html>
