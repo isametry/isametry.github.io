@@ -223,7 +223,6 @@ a,
 
 h1 {
     font-size: 175%;
-    line-height: 1;
     margin-top: 1.5em;
 }
 
@@ -233,8 +232,9 @@ h2 {
     padding-right: 1em;
     text-align: center;
     border-top: 1px dotted;
-    padding-top: 0.5em;
+    padding-top: 0.75em;
     margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 h3,
@@ -243,11 +243,15 @@ h4 {
     margin-bottom: 8px;
 }
 
+h1, h2, h3, h4 {
+    line-height: 1.4;
+    break-after: avoid;
+}
+
 h2 a::before {
     content: "⌘";
     opacity: 0%;
     margin-inline-end: 0.4em;
-
 }
 
 h2 a:hover::before,
@@ -260,6 +264,7 @@ h3 {
     margin-left: -1.2em;
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
 h3 a {
@@ -276,7 +281,7 @@ h3::after {
     content: "";
     display: flex;
     flex: 1;
-    height: 1.8em;
+    height: 1.4em;
 
     right: 0;
     left: auto;
@@ -345,8 +350,8 @@ hr {
 }
 
 .square_tags {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .square_tags ul {
@@ -474,8 +479,7 @@ a > .blockdesc {
 }
 
 .resume_items p,
-.resume_items ul,
-.stripy_header h3 {
+.resume_items ul {
     margin-top: 8px;
     margin-bottom: 8px;
 }
