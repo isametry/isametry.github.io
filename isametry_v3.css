@@ -227,19 +227,21 @@ h1 {
     margin-top: 1.5em;
 }
 
-h2,
-h3,
-h4 {
-    margin-top: 24px;
-    margin-bottom: -6px;
-}
 
 h2 {
     font-size: 150%;
-    margin-left: -1em;
+    padding-right: 1em;
     text-align: center;
+    border-top: 1px dotted;
+    padding-top: 0.5em;
+    margin-top: 32px;
 }
 
+h3,
+h4 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
 
 h2 a::before {
     content: "⌘";
@@ -248,19 +250,41 @@ h2 a::before {
 
 }
 
-h2 a:hover::before {
+h2 a:hover::before,
+h3 a:hover::before {
     opacity: 50%;
 }
 
 h3 {
     font-size: 110%;
     margin-left: -1.2em;
+    display: flex;
+    width: 100%;
+}
+
+h3 a {
+    display: inline-block;
 }
 
 h3 a::before {
     content: "⌥";
     margin-inline-end: 0.6em;
+    opacity: 0;
+}
 
+h3::after {
+    content: "";
+    display: flex;
+    flex: 1;
+    height: 1.8em;
+
+    right: 0;
+    left: auto;
+
+    margin-left: 1em;
+    margin-right: -1.2em;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' shape-rendering='crispEdges'%3E%3Cdefs%3E%3Cpattern id='hatch' x='0' y='0' width='10' height='10' patternUnits='userSpaceOnUse'%3E%3Crect width='20' height='20' fill-opacity='0%25'/%3E%3Cpath d='M-1,1 l2,-2 M0,10 l10,-10 M9,11 l2,-2' stroke='hsla(162, 100%25, 40%25, 40%25)' stroke-width='2'%0Atransform='scale(1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23hatch)'%3E%3C/rect%3E%3C/svg%3E");
+    z-index: -20;
 }
 
 .go_back::before {
@@ -271,7 +295,13 @@ h4 {
     opacity: 0.65;
 }
 
-.elegant::before,
+.navblock > h2 {
+    text-align: revert;
+    border: none;
+    margin: revert;
+    padding: revert;
+}
+
 .navblock > h2::before {
     content: none;
 }
@@ -285,8 +315,8 @@ h4 {
 }
 
 hr {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 28px;
+    margin-bottom: 12px;
     opacity: 0.2;
 }
 
@@ -314,11 +344,15 @@ hr {
     padding: 0.5em;
 }
 
-.square_tags,
+.square_tags {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
 .square_tags ul {
     padding-left: 0px;
     display: inline-block;
-    margin-top: 6px;
+    margin-top: 0px;
     margin-bottom: 0em;
 }
 
@@ -386,6 +420,7 @@ li {
     display: flex; 
     flex-direction: column;
     gap: 1em;
+    margin-top: 32px;
 }
 
 .navblock {
@@ -449,31 +484,3 @@ a > .blockdesc {
 .resume_items .subtitle_classic {
     padding-left: 0px;
 }
-
-h3 {
-    display: flex;
-    width: 100%;
-}
-
-h3:after {
-    content: "";
-    display: flex;
-    flex: 1;
-    height: 1.8em;
-
-    right: 0;
-    left: auto;
-
-    margin-left: 1em;
-    margin-right: 0em;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' shape-rendering='crispEdges'%3E%3Cdefs%3E%3Cpattern id='hatch' x='0' y='0' width='10' height='10' patternUnits='userSpaceOnUse'%3E%3Crect width='20' height='20' fill-opacity='0%25'/%3E%3Cpath d='M-1,1 l2,-2 M0,10 l10,-10 M9,11 l2,-2' stroke='hsla(162, 100%25, 40%25, 40%25)' stroke-width='2'%0Atransform='scale(1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23hatch)'%3E%3C/rect%3E%3C/svg%3E");
-    z-index: -20;
-}
-
-/* .stripy_header {
-    background-color: Canvas;
-    margin: 0px;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-right: 16px;
-} */
